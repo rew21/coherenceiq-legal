@@ -24,13 +24,14 @@
 <body>
 <div class="container">
   <h1>Privacy Policy</h1>
-  <p class="subtitle">CoherenceIQ &nbsp;·&nbsp; Deep Dive Consulting LLC &nbsp;·&nbsp; Effective Date: March 14, 2026</p>
+  <p class="subtitle">CoherenceIQ &nbsp;·&nbsp; Deep Dive Consulting LLC &nbsp;·&nbsp; Effective Date: April 1, 2026</p>
 
   <p>This Privacy Policy describes how Deep Dive Consulting LLC ("we," "us," or "our") collects, uses, and protects your information when you use the CoherenceIQ mobile application ("App"). We are committed to protecting your privacy and handling your data with care.</p>
 
   <h2>1. Information We Collect</h2>
   <p><strong>Account Information:</strong> When you sign in with Apple, we receive your name and email address. If you choose Apple's "Hide My Email" feature, we receive a private relay address. We store this information to personalize your experience.</p>
   <p><strong>Biometric Data:</strong> The App uses your Muse S Gen 2 EEG headband and Polar H10 heart rate monitor to measure brainwave activity and cardiac data during meditation sessions. See the Biometric Data section below for important details about how this data is handled.</p>
+  <p><strong>Health &amp; Wellness Data:</strong> If you connect Apple Health, we read sleep duration and deep sleep percentage to provide context for your AI coaching. We also collect self-reported sleep quality and stress levels if you provide them before sessions. This data is stored in your account and transmitted to Anthropic for AI analysis as described in Section 4.</p>
   <p><strong>Session Data:</strong> We collect records of your meditation sessions, including duration, timestamps, session scores, skill measurements, and progress over time.</p>
   <p><strong>Usage Data:</strong> We collect information about how you use the App, including features accessed and app performance data, to improve the App experience.</p>
 
@@ -60,7 +61,15 @@
   </ul>
 
   <h2>4. AI-Powered Analysis</h2>
-  <p>CoherenceIQ uses Anthropic's Claude API to generate personalized post-session analysis. To do this, session metric data (scores, durations, skill measurements) is transmitted to Anthropic's API. Raw biometric data is never sent. AI-generated analyses are stored in your account for your review.</p>
+  <p>CoherenceIQ uses Anthropic's Claude API to generate personalized post-session analysis and coaching. To provide this service, the following data is transmitted to Anthropic's servers for processing:</p>
+  <ul>
+    <li>Session metrics: HBCI scores, HRV coherence values, brainwave band power levels (delta, theta, alpha, beta, gamma), phase scores, session duration, and skill measurements</li>
+    <li>Pre-session context: self-reported sleep quality and stress level (if provided), and HealthKit sleep data (total hours and deep sleep percentage) if you have connected Apple Health</li>
+    <li>Practitioner profile: your practice patterns, strongest and developing skills, and session history summaries</li>
+    <li>Meditation metadata: meditation name, blueprint phases, and instruction context</li>
+  </ul>
+  <p><strong>Raw biometric waveform data (raw EEG signals, raw heart rate signals) is never sent to Anthropic.</strong> Only computed scores and metrics are transmitted.</p>
+  <p>Anthropic processes this data solely to generate your analysis and does not use it to train AI models. AI-generated analyses are stored in your account for your review. For more information, see <a href="https://www.anthropic.com/privacy">Anthropic's Privacy Policy</a>.</p>
 
   <h2>5. Data Storage and Security</h2>
   <p>Your data is stored using Supabase, a SOC 2 compliant database platform with servers located in the United States. All data is encrypted in transit using TLS and encrypted at rest. We implement industry-standard security practices to protect your information.</p>
@@ -69,8 +78,9 @@
   <p>We use the following third-party services to operate the App:</p>
   <ul>
     <li><strong>Supabase</strong> — Database and authentication infrastructure</li>
-    <li><strong>Anthropic</strong> — AI analysis (session metrics only, no raw biometric data)</li>
-    <li><strong>RevenueCat</strong> — Subscription management and billing</li>
+    <li><strong>Anthropic</strong> — AI analysis and coaching (session metrics and practitioner context as described in Section 4; no raw biometric waveform data)</li>
+    <li><strong>OpenAI</strong> — Audio transcription of meditation recordings for phase mapping (audio is processed and not stored by OpenAI)</li>
+    <li><strong>RevenueCat</strong> — Subscription management and billing (subscription status and anonymous user ID only)</li>
     <li><strong>Apple</strong> — Authentication via Sign In with Apple</li>
   </ul>
   <p>Each of these services has its own privacy policy governing their use of data.</p>
@@ -79,7 +89,7 @@
   <p>We retain your account data and session history for as long as your account is active. If you delete your account, we will permanently delete your personal data and biometric-derived data within 30 days, except where retention is required by law.</p>
 
   <h2>8. Your Rights</h2>
-  <p>You have the right to access, correct, or delete your personal data at any time. You may also request a copy of your data or withdraw consent for biometric data processing.</p>
+  <p>You have the right to access, correct, or delete your personal data at any time. You may also request a copy of your data or withdraw consent for biometric data processing. When you request data deletion, all session data, biometric-derived metrics, AI analyses, practitioner profiles, uploaded audio files, and HealthKit-derived data are permanently removed from our servers.</p>
   <p>To exercise these rights, contact us at: <a href="mailto:privacy@coherenceiq.app">privacy@coherenceiq.app</a></p>
   <p>Illinois, Texas, and Washington state residents have additional rights under applicable biometric privacy laws. Please contact us to exercise those rights.</p>
 
