@@ -19,89 +19,106 @@
   a { color: #0066cc; }
   hr { border: none; border-top: 1px solid #eee; margin: 40px 0; }
   .footer { color: #999; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0 14px; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #eee; vertical-align: top; }
+  th { background: #fafafa; font-weight: 600; }
 </style>
 </head>
 <body>
 <div class="container">
   <h1>Privacy Policy</h1>
-  <p class="subtitle">CoherenceIQ &nbsp;·&nbsp; Deep Dive Consulting LLC &nbsp;·&nbsp; Effective Date: April 1, 2026</p>
+  <p class="subtitle">CoherenceIQ &nbsp;·&nbsp; Deep Dive Consulting LLC &nbsp;·&nbsp; Effective Date: April 22, 2026</p>
 
-  <p>This Privacy Policy describes how Deep Dive Consulting LLC ("we," "us," or "our") collects, uses, and protects your information when you use the CoherenceIQ mobile application ("App"). We are committed to protecting your privacy and handling your data with care.</p>
+  <p>This Privacy Policy describes how Deep Dive Consulting LLC ("we," "us," or "our") collects, uses, and protects your information when you use the CoherenceIQ mobile application and website (collectively, the "Service"). We handle personal data, including health and biometric data, with care and in accordance with applicable law.</p>
 
   <h2>1. Information We Collect</h2>
-  <p><strong>Account Information:</strong> When you sign in with Apple, we receive your name and email address. If you choose Apple's "Hide My Email" feature, we receive a private relay address. We store this information to personalize your experience.</p>
-  <p><strong>Biometric Data:</strong> The App uses your Muse S Gen 2 EEG headband and Polar H10 heart rate monitor to measure brainwave activity and cardiac data during meditation sessions. See the Biometric Data section below for important details about how this data is handled.</p>
-  <p><strong>Health &amp; Wellness Data:</strong> If you connect Apple Health, we read sleep duration and deep sleep percentage to provide context for your AI coaching. We also collect self-reported sleep quality and stress levels if you provide them before sessions. This data is stored in your account and transmitted to Anthropic for AI analysis as described in Section 4.</p>
-  <p><strong>Session Data:</strong> We collect records of your meditation sessions, including duration, timestamps, session scores, skill measurements, and progress over time.</p>
-  <p><strong>Usage Data:</strong> We collect information about how you use the App, including features accessed and app performance data, to improve the App experience.</p>
+  <p><strong>Account Information.</strong> When you sign in with Apple, we receive your name and email address. If you choose Apple's "Hide My Email" relay, we receive a private relay address. We store this information to authenticate you and personalize your experience.</p>
+  <p><strong>Biometric and Health Data.</strong> The Service uses compatible Bluetooth sensors (for example, a Polar H10 chest strap, a Polar Verity Sense armband, or a Muse S EEG headband) to measure cardiac and brainwave activity during meditation. See Section 2 for important details.</p>
+  <p><strong>Apple Health Data.</strong> If you grant permission, we read sleep duration and deep sleep percentage to provide context for session scoring. We also read self-reported sleep quality and stress level if you enter them before a session.</p>
+  <p><strong>Session Data.</strong> We store records of your meditation sessions, including duration, timestamps, session scores, skill measurements, and progress over time.</p>
+  <p><strong>Meditation Audio and Transcripts.</strong> When you import a meditation audio file into the Service, the file is transcribed so the Service can identify which coherence skills the meditation asks you to practice in each phase. These skill phases are what the Service uses to score your effectiveness during each phase of a session. Transcription is performed on a secure server by OpenAI (see Section 6); audio is not retained after transcription.</p>
+  <p><strong>Usage Data.</strong> We collect information about how you use the Service, including features accessed and app performance data, to improve the Service.</p>
 
-  <h2>2. Biometric Data — Special Notice</h2>
+  <h2>2. Biometric and Health Data — Special Category Notice</h2>
   <div class="biometric-notice">
-    <p><strong>Important:</strong> CoherenceIQ collects and processes biometric identifiers and biometric information as defined under applicable biometric privacy laws, including the Illinois Biometric Information Privacy Act (BIPA) and similar laws in Texas and Washington state.</p>
+    <p><strong>Important.</strong> CoherenceIQ collects and processes biometric identifiers and health-related data. Under the EU General Data Protection Regulation (GDPR) Article 9 and the UK Data Protection Act 2018, this is "special category" data. Under Illinois, Texas, Washington, and other U.S. biometric privacy laws, it is "biometric information." We process this data on the basis of your <strong>explicit consent</strong>, given when you create an account and begin sessions.</p>
   </div>
   <ul>
-    <li>Raw EEG waveform data and raw cardiac waveform data are processed locally on your device during sessions and are <strong>not transmitted to our servers</strong>.</li>
-    <li>Computed scores and metrics derived from your biometric signals (such as HBCI scores, HRV values, and skill scores) are stored in our secure cloud database to power your progress tracking.</li>
-    <li>We do not sell, lease, trade, or profit from your biometric data.</li>
-    <li>We do not share biometric data with third parties except as necessary to provide the App services (see Third-Party Services below).</li>
-    <li>Biometric data is permanently deleted upon account deletion. To request deletion, go to Settings → Delete Account within the App.</li>
-    <li>We retain biometric-derived data only for as long as necessary to provide the App services or as required by law.</li>
+    <li>Raw EEG waveforms and raw cardiac waveforms are processed locally on your device during sessions and are <strong>not transmitted to our servers</strong>.</li>
+    <li>Derived metrics (HBCI scores, HRV values, coherence scores, skill scores, band power levels) are stored in our secure cloud database to power your progress tracking.</li>
+    <li>We do not sell, lease, trade, or profit from your biometric or health data. We do not use it for advertising, and we do not share it with advertising or data-broker networks.</li>
+    <li>We share derived data only with the sub-processors listed in Section 6, each solely for the purpose of providing the Service.</li>
+    <li>Biometric-derived data is permanently deleted upon account deletion. To request deletion, use Settings → Delete Account within the App or contact us at <a href="mailto:privacy@coherenceiq.app">privacy@coherenceiq.app</a>.</li>
+    <li>You may withdraw consent at any time by deleting your account; withdrawal does not affect the lawfulness of processing prior to withdrawal.</li>
   </ul>
-  <p>By using CoherenceIQ, you consent to the collection and processing of biometric data as described in this policy.</p>
+  <p>By using CoherenceIQ, you provide your explicit consent to the collection and processing of biometric and health data as described in this policy.</p>
 
   <h2>3. How We Use Your Information</h2>
   <ul>
-    <li>Provide and personalize the App experience</li>
-    <li>Generate AI-powered post-session analysis and coaching</li>
-    <li>Track your meditation practice progress over time</li>
-    <li>Process subscription payments</li>
-    <li>Provide customer support</li>
-    <li>Improve App performance and features</li>
-    <li>Comply with legal obligations</li>
+    <li>Provide, operate, and personalize the Service.</li>
+    <li>Score your sessions and generate feedback on your practice.</li>
+    <li>Identify skill phases from imported meditation audio so your session data can be scored in context.</li>
+    <li>Process subscription payments via the app store.</li>
+    <li>Provide customer support.</li>
+    <li>Improve Service performance and reliability.</li>
+    <li>Comply with legal obligations.</li>
   </ul>
 
-  <h2>4. AI-Powered Analysis</h2>
-  <p>CoherenceIQ uses Anthropic's Claude API to generate personalized post-session analysis and coaching. To provide this service, the following data is transmitted to Anthropic's servers for processing:</p>
-  <ul>
-    <li>Session metrics: HBCI scores, HRV coherence values, brainwave band power levels (delta, theta, alpha, beta, gamma), phase scores, session duration, and skill measurements</li>
-    <li>Pre-session context: self-reported sleep quality and stress level (if provided), and HealthKit sleep data (total hours and deep sleep percentage) if you have connected Apple Health</li>
-    <li>Practitioner profile: your practice patterns, strongest and developing skills, and session history summaries</li>
-    <li>Meditation metadata: meditation name, blueprint phases, and instruction context</li>
-  </ul>
-  <p><strong>Raw biometric waveform data (raw EEG signals, raw heart rate signals) is never sent to Anthropic.</strong> Only computed scores and metrics are transmitted.</p>
-  <p>Anthropic processes this data solely to generate your analysis and does not use it to train AI models. AI-generated analyses are stored in your account for your review. For more information, see <a href="https://www.anthropic.com/privacy">Anthropic's Privacy Policy</a>.</p>
+  <h2>4. Session Scoring and Feedback</h2>
+  <p>The Service uses computed metrics (HBCI scores, HRV coherence values, brainwave band power levels, phase scores, session duration, and skill measurements), optional self-reported sleep and stress inputs, HealthKit sleep summary data (total hours and deep sleep percentage, if enabled), and meditation metadata (name, blueprint phases, instruction context) to produce your session feedback.</p>
+  <p><strong>Raw biometric waveforms are never transmitted to third parties.</strong> Only computed scores and metrics are sent to sub-processors, and only as needed to provide the Service.</p>
+  <p>Some Service features use third-party AI models (see Section 6). Those providers do not use your data to train their models.</p>
 
   <h2>5. Data Storage and Security</h2>
-  <p>Your data is stored using Supabase, a SOC 2 compliant database platform with servers located in the United States. All data is encrypted in transit using TLS and encrypted at rest. We implement industry-standard security practices to protect your information.</p>
+  <p>Your data is stored using Supabase, a SOC 2 compliant platform with infrastructure in the United States. Data is encrypted in transit using TLS and encrypted at rest. We follow industry-standard security practices, including row-level security, least-privilege access controls, and multi-factor authentication for administrative access.</p>
 
-  <h2>6. Third-Party Services</h2>
-  <p>We use the following third-party services to operate the App:</p>
+  <h2>6. Sub-Processors</h2>
+  <p>We use the following service providers to operate the Service. Each has its own privacy policy, which governs its use of data it receives from us.</p>
+  <table>
+    <thead><tr><th>Provider</th><th>Purpose</th><th>Data category</th></tr></thead>
+    <tbody>
+      <tr><td>Supabase (US)</td><td>Database, authentication, file storage</td><td>Account, session, health (derived)</td></tr>
+      <tr><td>Anthropic (US)</td><td>AI-assisted features</td><td>Session metrics, profile summaries (no raw waveforms)</td></tr>
+      <tr><td>OpenAI (US)</td><td>Audio transcription (skill-phase mapping); embeddings</td><td>Imported meditation audio; text embeddings</td></tr>
+      <tr><td>Resend (US)</td><td>Transactional email (welcome, account recovery)</td><td>Email address, first name</td></tr>
+      <tr><td>Sentry (US)</td><td>Error reporting and crash diagnostics</td><td>Technical diagnostic data, no biometric waveforms</td></tr>
+      <tr><td>RevenueCat (US)</td><td>Subscription management and entitlement checks</td><td>Anonymous user ID, subscription status</td></tr>
+      <tr><td>Apple (US)</td><td>Sign In with Apple; App Store payments; HealthKit</td><td>Name, email, subscription, HealthKit read scopes you authorize</td></tr>
+      <tr><td>Vercel (US)</td><td>Website and API hosting</td><td>Request metadata, standard server logs</td></tr>
+    </tbody>
+  </table>
+
+  <h2>7. International Data Transfers</h2>
+  <p>Our sub-processors are located in the United States. If you use the Service from the European Economic Area, the United Kingdom, or another jurisdiction outside the United States, your personal data will be transferred to and processed in the United States. Where required, these transfers are governed by the European Commission's Standard Contractual Clauses (SCCs) incorporated into our agreements with our sub-processors, or by equivalent mechanisms recognized under applicable law.</p>
+
+  <h2>8. Data Retention</h2>
+  <p>We retain personal data only as long as necessary for the purposes described in this policy, or as required by law.</p>
   <ul>
-    <li><strong>Supabase</strong> — Database and authentication infrastructure</li>
-    <li><strong>Anthropic</strong> — AI analysis and coaching (session metrics and practitioner context as described in Section 4; no raw biometric waveform data)</li>
-    <li><strong>OpenAI</strong> — Audio transcription of meditation recordings for phase mapping (audio is processed and not stored by OpenAI)</li>
-    <li><strong>RevenueCat</strong> — Subscription management and billing (subscription status and anonymous user ID only)</li>
-    <li><strong>Apple</strong> — Authentication via Sign In with Apple</li>
+    <li><strong>Account and profile data</strong> — for as long as your account exists; permanently deleted within 30 days of account deletion.</li>
+    <li><strong>Session and biometric-derived metrics</strong> — for as long as your account exists; permanently deleted within 30 days of account deletion.</li>
+    <li><strong>Imported meditation audio</strong> — retained only as long as needed to produce transcripts and skill blueprints; the audio file can be deleted by you from the library at any time.</li>
+    <li><strong>Error logs</strong> — 90 days maximum.</li>
+    <li><strong>Email logs (Resend)</strong> — per the retention policy of the provider; no more than 30 days of delivery metadata is accessible to us.</li>
   </ul>
-  <p>Each of these services has its own privacy policy governing their use of data.</p>
 
-  <h2>7. Data Retention</h2>
-  <p>We retain your account data and session history for as long as your account is active. If you delete your account, we will permanently delete your personal data and biometric-derived data within 30 days, except where retention is required by law.</p>
+  <h2>9. Your Rights</h2>
+  <p>You have the right to access, correct, delete, or export your personal data, and the right to restrict or object to processing, at any time.</p>
+  <p>Residents of the European Economic Area and the United Kingdom additionally have the right to lodge a complaint with a supervisory authority. Residents of California, Illinois, Texas, Washington, and other U.S. states with applicable privacy laws have the rights afforded by those laws, including the rights specific to biometric information.</p>
+  <p>To exercise any right, contact us at <a href="mailto:privacy@coherenceiq.app">privacy@coherenceiq.app</a>. We will respond within the timelines required by applicable law.</p>
 
-  <h2>8. Your Rights</h2>
-  <p>You have the right to access, correct, or delete your personal data at any time. You may also request a copy of your data or withdraw consent for biometric data processing. When you request data deletion, all session data, biometric-derived metrics, AI analyses, practitioner profiles, uploaded audio files, and HealthKit-derived data are permanently removed from our servers.</p>
-  <p>To exercise these rights, contact us at: <a href="mailto:privacy@coherenceiq.app">privacy@coherenceiq.app</a></p>
-  <p>Illinois, Texas, and Washington state residents have additional rights under applicable biometric privacy laws. Please contact us to exercise those rights.</p>
+  <h2>10. Children</h2>
+  <p>CoherenceIQ does not set a minimum age for use, because meditation is beneficial at any age. We do not run third-party advertising networks, we do not sell personal data, and we do not use personal data for behavioral advertising. If you are a parent or guardian of a minor who uses the Service, you may contact us at any time to review, correct, or delete that minor's personal data. If you believe we have collected data from a child in a manner that does not comply with applicable law, please contact us and we will respond promptly.</p>
 
-  <h2>9. Children's Privacy</h2>
-  <p>CoherenceIQ is not intended for users under the age of 18. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us immediately.</p>
+  <h2>11. Not a Medical Service</h2>
+  <p>CoherenceIQ is a wellness and biofeedback product for self-awareness and practice tracking. It does not diagnose, treat, cure, or prevent any medical condition. The Service is not a substitute for professional medical advice, diagnosis, or treatment. If you have a medical concern, consult a qualified healthcare provider.</p>
 
-  <h2>10. Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. We will notify you of material changes via email or in-app notification. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+  <h2>12. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. We will post the updated policy with a new effective date and, where changes are material, notify you in-app or by email. Continued use of the Service after a change constitutes acceptance of the updated policy.</p>
 
-  <h2>11. Contact Us</h2>
+  <h2>13. Contact Us</h2>
   <p>Deep Dive Consulting LLC<br>
-  Email: <a href="mailto:privacy@coherenceiq.app">privacy@coherenceiq.app</a></p>
+  Privacy: <a href="mailto:privacy@coherenceiq.app">privacy@coherenceiq.app</a><br>
+  Data Protection contact (EU/UK inquiries): <a href="mailto:privacy@coherenceiq.app">privacy@coherenceiq.app</a></p>
 
   <hr>
   <p class="footer">© 2026 Deep Dive Consulting LLC. All rights reserved.</p>
